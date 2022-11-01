@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="generalDB" Class="NotePaddleDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=sqlgeneralwork.database.windows.net;Initial Catalog=generalDB;Persist Security Info=True;User ID=shinner" SettingsObjectName="NotePaddle.Properties.Settings" SettingsPropertyName="generalDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.NotePaddle" Member="NotePaddles">
+    <Type Name="NotePaddle">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Content" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="LastEdited" Type="System.DateTime" DbType="DateTime2 NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime2 NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="NotePaddleDB">
+  <DataContextMoniker Name="/NotePaddleDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="84d012b0-1cb4-4a2d-80a3-885d214f1ad0" absoluteBounds="0.625, 0.5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/NotePaddleDBDataContext/NotePaddle" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3bc9fe3c-b794-43c4-8b31-0f49fcf642b6" absoluteBounds="0.63999999999999968, 0.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
