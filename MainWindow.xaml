@@ -52,8 +52,6 @@
                                         VerticalAlignment="Center"
                                         FontFamily="/Fonts/#Poppins"
                                         Text="{TemplateBinding Property=Content}" />
-
-
                                 </Grid>
                             </ControlTemplate>
                         </Setter.Value>
@@ -456,11 +454,7 @@
                     </Trigger>
                 </Style.Triggers>
             </Style>
-
-
         </ResourceDictionary>
-
-
     </Window.Resources>
     <Border
         Background="{StaticResource MainBackground}"
@@ -504,7 +498,6 @@
                         FontFamily="Poppins"
                         FontSize="20"
                         Foreground="{StaticResource MenuTextColor}" />
-
                 </StackPanel>
                 <Border
                     x:Name="SearchBoxContainer"
@@ -608,7 +601,7 @@
                     HorizontalContentAlignment="Stretch"
                     Foreground="{StaticResource MenuTextColor}"
                     Style="{StaticResource MenuButtonTheme}"
-                    Visibility="{Binding ElementName=NoteListBox, Path=HasItems, Converter={StaticResource boolToVis}}"/>-->
+                    Visibility="{Binding ElementName=NoteListBox, Path=HasItems, Converter={StaticResource boolToVis}}" />-->
                     <RadioButton
                         x:Name="NewButton"
                         Height="50"
@@ -646,14 +639,13 @@
                         GroupName="MenuButtons"
                         Style="{StaticResource MenuButtonTheme}" />
                 </StackPanel>
-
             </DockPanel>
 
             <Grid
                 x:Name="MainContentGrid"
                 Grid.Row="1"
                 Grid.Column="1">
-                
+
                 <!--Error Message Textblock-->
                 <TextBlock x:Name="ErrorMessageBox"
                            FontFamily="Poppins"
@@ -662,8 +654,8 @@
                            HorizontalAlignment="Center"
                            VerticalAlignment="Center"
                            Visibility="Collapsed"
-                           Text="This is an error message.."/>
-                
+                           Text="This is an error message.." />
+
                 <!--  Panel View Notes ListBox  -->
                 <DockPanel
                     x:Name="NoteListViewPanel"
@@ -720,8 +712,6 @@
                                     FontSize="14"
                                     Foreground="{StaticResource ListHeaderForeground}" />
                             </Border>
-
-
                         </StackPanel>
                         <ListBox
                             x:Name="NoteListBox"
@@ -864,10 +854,7 @@
                             </Grid>
                         </Border>
                     </Grid>
-
-
                 </DockPanel>
-
             </Grid>
         </Grid>
     </Border>

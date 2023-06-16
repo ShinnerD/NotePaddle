@@ -40,7 +40,7 @@ namespace NotePaddle
         }
 
         /// <summary>
-        /// Sets the Application main window into error mode, 
+        /// Sets the Application main window into error mode,
         /// hides components and displays the given string as en error message.
         /// </summary>
         /// <param name="v"></param>
@@ -121,13 +121,11 @@ namespace NotePaddle
             }
             else
             {
-
                 WorkingNote.Title = titleInputBox.Text;
                 WorkingNote.Content = contentInputBox.Text;
                 Service.NoteService noteService = new Service.NoteService();
                 noteService.SaveNote(WorkingNote);
                 ViewMode();
-
             }
         }
 

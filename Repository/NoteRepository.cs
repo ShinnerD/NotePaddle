@@ -16,23 +16,23 @@ namespace NotePaddle.Repository
         {
             try
             {
-            Database.NotePaddleDBDataContext dataContext = new Database.NotePaddleDBDataContext();
+                Database.NotePaddleDBDataContext dataContext = new Database.NotePaddleDBDataContext();
 
-            var result = new List<Model.Note>();
+                var result = new List<Model.Note>();
 
-            foreach ( var dbNote in dataContext.NotePaddles ) 
-            {
-                var note = new Model.Note();
+                foreach (var dbNote in dataContext.NotePaddles)
+                {
+                    var note = new Model.Note();
 
-                note.Id = dbNote.Id;
-                note.Title = dbNote.Title;
-                note.Content = dbNote.Content;
-                note.CreatedDate = dbNote.CreatedDate;
-                note.LastEdited = dbNote.LastEdited;
+                    note.Id = dbNote.Id;
+                    note.Title = dbNote.Title;
+                    note.Content = dbNote.Content;
+                    note.CreatedDate = dbNote.CreatedDate;
+                    note.LastEdited = dbNote.LastEdited;
 
-                result.Add( note );
-            }
-            return result;
+                    result.Add(note);
+                }
+                return result;
             }
             catch (SqlException)
             {
@@ -48,7 +48,7 @@ namespace NotePaddle.Repository
         /// <exception cref="ArgumentNullException"></exception>
         public void DeleteNote(Note note)
         {
-            if ( note != null )
+            if (note != null)
             {
                 Database.NotePaddleDBDataContext dataContext = new Database.NotePaddleDBDataContext();
 
@@ -62,7 +62,7 @@ namespace NotePaddle.Repository
             }
             else
             {
-                throw new ArgumentNullException( nameof( note ) );
+                throw new ArgumentNullException(nameof(note));
             }
         }
 
@@ -104,7 +104,7 @@ namespace NotePaddle.Repository
             }
             else
             {
-                throw new ArgumentNullException( nameof( workingNote ) );
+                throw new ArgumentNullException(nameof(workingNote));
             }
         }
     }

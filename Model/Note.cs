@@ -15,4 +15,3 @@ namespace NotePaddle.Model
         public DateTime LastEdited { get; set; }
     }
 }
-

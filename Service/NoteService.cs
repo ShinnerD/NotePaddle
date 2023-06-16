@@ -11,7 +11,7 @@ namespace NotePaddle.Service
         /// Retrieves a List of All Notes From the Repository ordered by last edit date
         /// </summary>
         /// <returns></returns>
-        public List<Model.Note> GetAllNotes() 
+        public List<Model.Note> GetAllNotes()
         {
             try
             {
@@ -44,8 +44,8 @@ namespace NotePaddle.Service
         /// <param name="workingNote"></param>
         public void SaveNote(Note workingNote)
         {
-                Repository.NoteRepository notesRepository = new Repository.NoteRepository();
-                notesRepository.SaveNote(workingNote);
+            Repository.NoteRepository notesRepository = new Repository.NoteRepository();
+            notesRepository.SaveNote(workingNote);
         }
 
         /// <summary>
@@ -62,6 +62,5 @@ namespace NotePaddle.Service
 
             return result;
         }
-
     }
 }
